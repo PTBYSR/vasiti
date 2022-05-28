@@ -24,8 +24,8 @@ const AddTestimonial = () => {
   const [story, setStory] = useState("")
   const [interaction, setInteraction] = useState("Customer")
   const [location, setLocation] = useState("")
-  const [id, setId] = useState("")
-
+  const [imgId, setImgId] = useState("")
+  console.log(imageUpload)
  
   //get radio value
   const getRadioValue = (e) => {
@@ -39,7 +39,6 @@ const AddTestimonial = () => {
     setFirstName('')
     setStory('')
     setLocation('')
-    setId('')
   }
   //add image
   const UploadProfilePicture = () => {
@@ -49,12 +48,11 @@ const AddTestimonial = () => {
       console.log("uploaed image")
     }).catch(err => console.log(err))
     console.log(
-      firstName, lastName, story, location
+      firstName, lastName, story, location, interaction, imgId
     )
   }
   //add testimony
   const addTestimony = async () => {
-    console.log(id)
     try{
       await addDoc(collection(db, "user"), {
         firstName: firstName,
@@ -62,6 +60,7 @@ const AddTestimonial = () => {
         story: story,
         location: location,
         interaction: interaction,
+        imgId: imgId
       })
       console.log('form submitted')
     } catch (err) {
@@ -80,10 +79,13 @@ const AddTestimonial = () => {
       <FormSection className="flex" onSubmit={handleSubmit}>
         <h1>share your amazing story!</h1>
         <FormImageLabel for="image">Upload your picture</FormImageLabel>
-        <FormImage required name="name" type="file" id="image" onChange={(e) => setImageUpload(e.target.files[0])} />
+        <FormImage required name="name" type="file" id="image" onChange={(e) => {setImageUpload(e.target.files[0])}} />
         <div>
           <Label for="first-name">First Name</Label>
-          <FormInput required value={firstName} name="First Name" type="text" id="first-name" onChange={(e) => setFirstName(e.target.value)}/>
+          <FormInput required value={firstName} name="First Name" type="text" id="first-name" onChange={(e) => {
+            setFirstName(e.target.value)
+            // setImgId(firstName + v4())
+            }}/>
           <Label for="last-name">Last Name</Label>
           <FormInput required ={lastName} name="Last Name" type="text" id="last-name" onChange={(e) => setLastName(e.target.value)} />
         </div>

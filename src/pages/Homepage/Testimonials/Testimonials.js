@@ -14,9 +14,9 @@ const Testimonials = () => {
     const q = query(collection(db, 'user'))
     const unsub = onSnapshot(q, (querySnapshot) => {
       setTestimonials(
-        querySnapshot.docs.map((doc) => {
+        querySnapshot.docs.map((doc) => ({
           data: doc.data()
-        })
+    }))
       )
     })
   },[])
@@ -29,7 +29,6 @@ const Testimonials = () => {
           LastName={testimonial.data.lastName}
           story={testimonial.data.story}
           location={testimonial.data.location}
-          imgId={testimonial.data.imgId}
         />
       ))}
     </div>

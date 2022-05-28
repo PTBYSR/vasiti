@@ -2,7 +2,7 @@
 :root {
 
   /* FONT-FAMILY*/
-    --ff-cassette: "alphabetized cassette tapes";
+    --ff-inter: "inter";
   
     /* FONT-WEIGHT */
     --fw-400: 400;
@@ -27,6 +27,8 @@
     --fc-black: #000000;
     --fc-gray: gray;
     --fc-red: red;
+    --fc-blue: #0D019A;
+    --fc-green: #049A01;
 
     /* BG COLOR */
     --orange: #FF5C00;
@@ -37,8 +39,8 @@
     --bg-footer: #25201d;
 
     /* COMPONENT COLOR */
-    --light-blue: ;
-    --light-green: ;
+    --light-blue:#EEF8FF;
+    --light-green: #F0FFEE ;
     ;
     
     /* COMPONENTS */
@@ -163,6 +165,35 @@
     border: 0;
   }
   
+  /* font size */
+  .fs-49 {
+    font-size: 49px;
+  }
+  .fs-32 {
+    font-size: 32px;
+  }
+  .fs-28 {
+    font-size: 28px;
+  }
+  .fs-24 {
+    font-size: 24px;
+  }
+  .fs-20 {
+    font-size: 20px;
+  }
+  .fs-18 {
+    font-size: 18px;
+  }
+  .fs-16 {
+    font-size: 16px;
+  }
+  .fs-14 {
+    font-size: 14px;
+  }
+  .fs-13 {
+    font-size: 13px;
+  }
+
   /* colors */
   .text-red {
     color: var(--fc-red);
@@ -173,11 +204,29 @@
   .text-red {
     color: var(--fc-red);
   }
+  .bg-orange {
+    background-color: var(--orange);
+  }
+  .bg-white {
+    background-color: var(--bg-white);
+  }
+  .bg-gray {
+    background-color: var(--bg-gray);
+  }
+  .bg-light-gray {
+    background-color: var(--light-gray);
+  }
+  .bg-light-pink {
+    background-color: var(--bg-light-pink);
+  }
+  .bg-footer {
+    background-color: var(--bg-footer);
+  }
   
   /* typography */
   
-  .ff-cassette {
-    font-family: var(--ff-cassette);
+  .ff-inter {
+    font-family: var(--ff-inter);
   }
   .line-height-h1 {
     line-height: 60px;
@@ -199,32 +248,11 @@
     text-transform: uppercase;
   }
   
-  .fs-heading {
-    font-size: var(--fs-heading);
-  }
-  .fs-cat-heading {
-    font-size: var(--fs-cat-heading);
-  }
-  .fs-body {
-    font-size: var(--fs-body);
-  }
-  .fs-xs {
-    font-size: var(--fs-xs);
-  }
-  .fs-s {
-    font-size: var(--fs-s);
-  }
-  
   .resize {
     width: var(--img-resize);
   }
   .App {
     border: 1px blue solid;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
   .underline {
     text-decoration: underline;

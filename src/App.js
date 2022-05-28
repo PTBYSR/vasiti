@@ -12,7 +12,6 @@ import Homepage from './pages/Homepage/Homepage'
 function App() {
   return (
     <div className="App">
-      <h1>HEllo</h1>
       <Router>
         <Routes>
           <Route path='/add-testimonial' element={<AddTestimonial/>} />

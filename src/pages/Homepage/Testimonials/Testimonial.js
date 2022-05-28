@@ -7,7 +7,6 @@ const Testimonial = ({firstName, imgId}) => {
             {firstName}
         </div>
         <div>
-            {imgId}
         </div>
     </div>
   )
