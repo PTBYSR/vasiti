@@ -91,7 +91,7 @@
     line-height: 1.5;
     min-height: 97vh;
     position: relative;
-    font-family: 'alphabetized cassette tapes'
+    /* font-family: 'alphabetized cassette tapes' */
   }
   
   /* make images easier to use */
@@ -226,23 +226,9 @@
     align-items: center;
     flex-direction: column;
   }
-  .image-wrapper{
-    background-image: url('./wood.jpg');
-    background-repeat: repeat;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    
-  }
-  .page-lines{
-    height: 50px;
-    border-bottom: 1px rgba(0, 0, 255, 0.486) solid;
-  }
-  .astract-watermark {
-    flex-direction: column;
-    text-align: center;
-  }
   .underline {
     text-decoration: underline;
+  }
+  .side-by-side{
+    flex-direction: column;
   }
