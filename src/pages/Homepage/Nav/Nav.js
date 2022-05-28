@@ -11,7 +11,7 @@ import logo from './logo.svg'
 
 const Nav = () => {
   return (
-    <NavSection className="flex">
+    <NavSection className="flex container">
       <TopNav className='flex'>
         <img src={logo} width="120px"></img>
         <NavLinks className="flex fs-13">
