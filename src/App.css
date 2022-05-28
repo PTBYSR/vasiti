@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
-}
+@import url('https://www.1001fonts.com/alphabetized-cassette-tapes-font.html');
+:root {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* FONT-FAMILY*/
+    --ff-cassette: "alphabetized cassette tapes";
+  
+    /* FONT-WEIGHT */
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+  
+    /* FONT-SIZES */
+    /* --fs-heading: 5.68rem; */
+    --fs-49: 49px;
+    --fs-32: 32px;
+    --fs-28: 28px;
+    --fs-24: 24px;
+    --fs-20: 20px;
+    --fs-18: 18px;
+    --fs-16: 16px;
+    --fs-14: 14px;
+    --fs-13: 13px;
+    /* 24, 18,16,13 */
+  
+    /* FONT-COLOR */
+    --fc-top-nav: #242120;
+    --fc-black: #000000;
+    --fc-gray: gray;
+    --fc-red: red;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* BG COLOR */
+    --orange: #FF5C00;
+    --bg-white: #ffffff;
+    --bg-gray: #222222;
+    --light-gray: #2e2e2e;
+    --bg-light-pink: #fff8f5;
+    --bg-footer: #25201d;
+
+    /* COMPONENT COLOR */
+    --light-blue: ;
+    --light-green: ;
+    ;
+    
+    /* COMPONENTS */
+    --img-resize: 9vw;
+    --border-small: ;
+    --border-big: ;
+    --link-icon: var('./assets/linkicon.svg')
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* RESET CSS */
+  
+  /* Box sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Reset margins */
+  
+  body,
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  figure,
+  picture {
+    margin: 0;
   }
-}
+  
+  h1,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400; /* remove default */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* set up the body */
+  body {
+    line-height: 1.5;
+    min-height: 97vh;
+    position: relative;
+    font-family: 'alphabetized cassette tapes'
+  }
+  
+  /* make images easier to use */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* make forms easier */
+  /* by default these form elements do not inherit font family by default */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* remove animations for people who've turned them off */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* utility classes */
+  
+  .flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+  
+  .grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+  }
+  
+  /* undefined custom properties
+  makes them overidable
+  when declaring
+  them using inline css */
+  .flow > *:where(:not(:last-child)) {
+    margin-top: var(--flow-space, 1rem);
+    outline: 1px solid red;
+  }
+  
+  .container {
+    /* same as padding: 0 2em */
+    /* padding-inline: 2em;  */
+    margin-inline: auto;
+    padding: 1rem;
+    max-width: 80rem;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* add line */
+    border: 0;
+  }
+  
+  /* colors */
+  .text-red {
+    color: var(--fc-red);
+  }
+  .text-gray {
+    color: var(--fc-gray);
+  }
+  .text-red {
+    color: var(--fc-red);
+  }
+  
+  /* typography */
+  
+  .ff-cassette {
+    font-family: var(--ff-cassette);
+  }
+  .line-height-h1 {
+    line-height: 60px;
+  }
+  .letter-height-1 {
+    line-height: 32px;
+  }
+  .letter-height-2 {
+    line-height: 27px;
+  }
+  .letter-height-3 {
+    line-height: 24px;
+  }
+  .letter-height-4 {
+    line-height: 20px;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .fs-heading {
+    font-size: var(--fs-heading);
+  }
+  .fs-cat-heading {
+    font-size: var(--fs-cat-heading);
+  }
+  .fs-body {
+    font-size: var(--fs-body);
+  }
+  .fs-xs {
+    font-size: var(--fs-xs);
+  }
+  .fs-s {
+    font-size: var(--fs-s);
+  }
+  
+  .resize {
+    width: var(--img-resize);
+  }
+  .App {
+    border: 1px blue solid;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image-wrapper{
+    background-image: url('./wood.jpg');
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    
+  }
+  .page-lines{
+    height: 50px;
+    border-bottom: 1px rgba(0, 0, 255, 0.486) solid;
+  }
+  .astract-watermark {
+    flex-direction: column;
+    text-align: center;
+  }
+  .underline {
+    text-decoration: underline;
+  }
