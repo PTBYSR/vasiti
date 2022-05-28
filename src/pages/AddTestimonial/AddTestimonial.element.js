@@ -8,6 +8,14 @@ export const FormSection = styled.form`
 export const FormInput = styled.input`
     border: 1px solid black;
 `
+export const FormImage = styled.input`
+    /* display: none;     */
+`
+export const FormImageLabel = styled.label`
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+`
 export const TextArea = styled.textarea`
 
 `
