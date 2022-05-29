@@ -31,6 +31,7 @@
     --fc-red: red;
     --fc-blue: #0D019A;
     --fc-green: #049A01;
+    --fc-white: #ffffff;
     
 
     /* BG COLOR */
@@ -212,8 +213,8 @@
   .text-gray {
     color: var(--fc-gray);
   }
-  .text-red {
-    color: var(--fc-red);
+  .text-white {
+    color: var(--fc-white);
   }
   .bg-orange {
     background-color: var(--orange);
