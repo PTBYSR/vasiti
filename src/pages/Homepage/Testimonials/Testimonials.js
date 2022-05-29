@@ -36,6 +36,7 @@ const Testimonials = () => {
           firstName={testimonial.data.firstName}
           LastName={testimonial.data.lastName}
           story={testimonial.data.story}
+          interaction={testimonial.data.interaction}
           location={testimonial.data.location}
         />
       ))}

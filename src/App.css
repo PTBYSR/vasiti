@@ -28,6 +28,7 @@
     --fc-black: #000000;
     --fc-landing-gray: #494949;
     --fc-body-gray: #494949;
+    --fc-name-gray: #474747;
     --fc-red: red;
     --fc-blue: #0D019A;
     --fc-green: #049A01;
@@ -212,6 +213,9 @@
   }
   .text-gray {
     color: var(--fc-gray);
+  }
+  .text-name-gray {
+    color: var(--fc-name-gray);
   }
   .text-white {
     color: var(--fc-white);

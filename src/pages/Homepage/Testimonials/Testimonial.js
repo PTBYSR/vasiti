@@ -5,17 +5,19 @@ import {
   Location,
   BodyText,
   Interaction,
-  LocationWrapper
+  LocationWrapper,
+  Img
 } from './Testimonial.element'
 
 const Testimonial = ({firstName, interaction, location, story}) => {
   return (
-    <TestimonialSection>
+    <TestimonialSection className='ff-inter'>
+      <Img src=""></Img>
       <Name>
-        <h1>{firstName}</h1>
+        <h1 className='fw-600 text-name-gray'>{firstName}</h1>
       </Name>
-      <LocationWrapper>
-         <Location>{location}</Location>
+      <LocationWrapper className='flex'>
+         <Location className='fw-500'>{location}</Location>
          <Interaction>{interaction}</Interaction>     
       </LocationWrapper>
       <BodyText>
