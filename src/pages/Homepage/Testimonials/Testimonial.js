@@ -1,14 +1,29 @@
 import React from 'react'
+import {
+  TestimonialSection,
+  Name,
+  Location,
+  BodyText,
+  Interaction,
+  LocationWrapper
+} from './Testimonial.element'
 
-const Testimonial = ({firstName, imgId}) => {
+const Testimonial = ({firstName, interaction, location, story}) => {
   return (
-    <div>
-        <div>
-            {firstName}
-        </div>
-        <div>
-        </div>
-    </div>
+    <TestimonialSection>
+      <Name>
+        <h1>{firstName}</h1>
+      </Name>
+      <LocationWrapper>
+         <Location>{location}</Location>
+         <Interaction>{interaction}</Interaction>     
+      </LocationWrapper>
+      <BodyText>
+        <p>
+          {story}
+        </p>
+      </BodyText>
+    </TestimonialSection>
   )
 }
 

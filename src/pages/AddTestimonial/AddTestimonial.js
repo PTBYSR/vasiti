@@ -25,12 +25,10 @@ const AddTestimonial = () => {
   const [interaction, setInteraction] = useState("Customer")
   const [location, setLocation] = useState("")
   const [imgId, setImgId] = useState("")
-  console.log(imageUpload)
  
   //get radio value
   const getRadioValue = (e) => {
     setInteraction(e.target.value)
-    console.log(interaction)
   }
   //reset all input
   const resetInput = () => {
@@ -72,7 +70,7 @@ const AddTestimonial = () => {
     e.preventDefault();
     UploadProfilePicture();
     addTestimony();
-    // resetInput();
+    resetInput();
   }
   return (
     <div>

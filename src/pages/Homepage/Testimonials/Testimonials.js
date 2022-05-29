@@ -6,23 +6,31 @@ import {
   QuerySnapshot,
 } from 'firebase/firestore'
 import db from '../../../firebase'
+import {
+  TestimonialsSection,
+  TestimonialsWrapper,
+} from './Testimonials.element'
 import Testimonial from './Testimonial'
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([])
+
   useEffect(() => {
     const q = query(collection(db, 'user'))
+    console.log(q)
     const unsub = onSnapshot(q, (querySnapshot) => {
       setTestimonials(
         querySnapshot.docs.map((doc) => ({
           data: doc.data()
-    }))
-      )
-    })
+        }))
+      
+    )})
+    console.log(testimonials)
   },[])
 
   return (
-    <div>
+    <TestimonialsSection>
+      <TestimonialsWrapper>
       {testimonials.map((testimonial) => (
         <Testimonial
           firstName={testimonial.data.firstName}
@@ -31,7 +39,10 @@ const Testimonials = () => {
           location={testimonial.data.location}
         />
       ))}
-    </div>
+        
+
+      </TestimonialsWrapper>
+    </TestimonialsSection>
   )
 }
 
