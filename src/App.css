@@ -3,6 +3,7 @@
 
   /* FONT-FAMILY*/
     --ff-inter: "inter";
+    --ff-roboto: "Roboto";
   
     /* FONT-WEIGHT */
     --fw-400: 400;
@@ -25,10 +26,12 @@
     /* FONT-COLOR */
     --fc-top-nav: #242120;
     --fc-black: #000000;
-    --fc-gray: gray;
+    --fc-landing-gray: #494949;
+    --fc-body-gray: #494949;
     --fc-red: red;
     --fc-blue: #0D019A;
     --fc-green: #049A01;
+    
 
     /* BG COLOR */
     --orange: #FF5C00;
@@ -91,8 +94,8 @@
   /* set up the body */
   body {
     line-height: 1.5;
-    min-height: 97vh;
     position: relative;
+
     /* font-family: 'alphabetized cassette tapes' */
   }
   
@@ -147,9 +150,9 @@
   
   .container {
     /* same as padding: 0 2em */
-    /* padding-inline: 2em;  */
+    padding-inline: 2em; 
     margin-inline: auto;
-    padding: 1rem;
+    /* padding: 1rem; */
     max-width: 80rem;
   }
   
@@ -193,7 +196,15 @@
   .fs-13 {
     font-size: 13px;
   }
-
+  .fw-400 {
+    font-weight: 400;
+  }
+  .fw-600 {
+    font-weight: 600;
+  }
+  .fw-700 {
+    font-weight: 700;
+  }
   /* colors */
   .text-red {
     color: var(--fc-red);
@@ -228,6 +239,9 @@
   .ff-inter {
     font-family: var(--ff-inter);
   }
+  .ff-roboto {
+    font-family: var(--ff-roboto);
+  }
   .line-height-h1 {
     line-height: 60px;
   }
@@ -259,4 +273,12 @@
   }
   .side-by-side{
     flex-direction: column;
+  }
+  .fullscreen-wrapper {
+    border: 1px dashed green;
+    height: 100%
+  }
+  .fullscreen-wrapper-1 {
+    border: 1px dashed red;
+    height: 100vh;
   }

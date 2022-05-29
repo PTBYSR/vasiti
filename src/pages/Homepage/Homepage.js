@@ -1,4 +1,7 @@
 import React from 'react'
+import {
+  LandingWrapper
+} from './Homepage.element'
 import Nav from './Nav/Nav'
 import Landing from './Landing/Landing'
 import Testimonials from './Testimonials/Testimonials'
@@ -9,11 +12,13 @@ import Footer from './Footer/Footer'
 const Homepage = () => {
   return (
     <div>
-        <Nav />
-        <Landing />
+      <LandingWrapper>
+          <Nav />
+          <Landing />
+      </LandingWrapper>
         <Banner />
         <Testimonials />
-        <Banner />
+        {/* <Banner /> */}
         <Testimonials />
         <Footer />
     </div>
