@@ -16,9 +16,15 @@ export const BodyText = styled.div`
 export const LocationWrapper = styled.div`
     border: 1px solid black;
     gap: 0rem;
-`
+    `
 export const Interaction = styled.p`
+    border-radius: 4px;
+    padding: 5px 6px;
+    font-size: 0.8vw;
     border: 1px solid black;
+    text-transform: uppercase;
+    background-color: var(--light-blue);
+    color: var(--fc-blue)
 `
 export const Img = styled.img`
     display: inline-block;

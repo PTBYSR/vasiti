@@ -16,7 +16,8 @@ export const NavWrapper2 = styled.div`
 box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
 `
 export const TopNav = styled.div`
-    height: 70px;
+    /* height: 70px; */
+    height: 5.1vw;
     border: 1px solid pink;
     justify-content: space-between;
     width: 100%;
@@ -24,12 +25,13 @@ export const TopNav = styled.div`
 `
 export const BottomNav = styled.div`
     border: 1px solid pink;
-    height: 50px;
+    /* height: 50px; */
+    height: 3.65vw;
     justify-content: center;
     align-items: center;
     `
 export const SignUp = styled.button`
-    padding: 0 1em;
+    padding: .2vw .9vw;
     color: white;
     height: 32px;
     box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
@@ -44,6 +46,7 @@ export const NavLinks = styled.ul`
     align-items: center;
     width: 30vw;
     justify-content: space-between;
+    font-size: .95vw;
 `
 export const NavLinks2 = styled.ul`
     justify-content: space-between;
@@ -52,6 +55,8 @@ export const NavLinks2 = styled.ul`
     list-style: none;
     text-transform: uppercase;
     width: 100%;
+    font-size: .95vw;
+
 `
 export const NavLink = styled.li`
     

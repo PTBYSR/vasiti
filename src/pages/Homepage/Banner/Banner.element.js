@@ -11,7 +11,7 @@ export const BannerSection = styled.section`
 export const Ellipse = styled.img`
     border: 2px dashed blue;
     position: absolute;
-    left: 109px;
+    /* left: 109px; */
     bottom: -30px;
     width: 41vw;
 `

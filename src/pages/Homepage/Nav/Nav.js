@@ -17,7 +17,7 @@ const Nav = () => {
     <NavSection className="flex">
       <NavWrapper>
         <TopNav className='flex'>
-          <img src={logo} width="120px"></img>
+          <img src={logo} style={{width:"10vw"}}></img>
           <NavLinks className="flex fs-13 ff-robot">
             <NavLink>About us</NavLink>
             <NavLink>Stores</NavLink>

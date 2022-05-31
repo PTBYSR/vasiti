@@ -14,15 +14,16 @@ const Testimonial = ({firstName, interaction, location, story}) => {
     <TestimonialSection className='ff-inter'>
       <Img src=""></Img>
       <Name>
-        <h1 className='fw-600 text-name-gray'>{firstName}</h1>
+        <h1 className='fw-600 text-name-gray'>{firstName}Paul</h1>
       </Name>
       <LocationWrapper className='flex'>
-         <Location className='fw-500'>{location}</Location>
-         <Interaction>{interaction}</Interaction>     
+         <Location className='fw-500'>{location}Ikeja</Location>
+         <Interaction className=''>{interaction}Vendor</Interaction>     
       </LocationWrapper>
       <BodyText>
         <p>
           {story}
+          vasiti is m
         </p>
       </BodyText>
     </TestimonialSection>
