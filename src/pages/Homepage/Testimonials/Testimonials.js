@@ -31,7 +31,7 @@ const Testimonials = () => {
   return (
     <TestimonialsSection>
       <TestimonialsWrapper>
-      {/* {testimonials.map((testimonial) => (
+      {testimonials.map((testimonial) => (
         <Testimonial
           firstName={testimonial.data.firstName}
           LastName={testimonial.data.lastName}
@@ -39,16 +39,7 @@ const Testimonials = () => {
           interaction={testimonial.data.interaction}
           location={testimonial.data.location}
         />
-      ))} */}
-        
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
+      ))}
       </TestimonialsWrapper>
     </TestimonialsSection>
   )
