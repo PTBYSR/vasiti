@@ -17,7 +17,6 @@ const Testimonials = () => {
 
   useEffect(() => {
     const q = query(collection(db, 'user'))
-    console.log(q)
     const unsub = onSnapshot(q, (querySnapshot) => {
       setTestimonials(
         querySnapshot.docs.map((doc) => ({
@@ -25,7 +24,6 @@ const Testimonials = () => {
         }))
       
     )})
-    console.log(testimonials)
   },[])
 
   return (

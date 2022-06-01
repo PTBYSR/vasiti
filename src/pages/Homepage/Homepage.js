@@ -10,15 +10,16 @@ import Footer from './Footer/Footer'
 
 
 const Homepage = () => {
+  const changeValue = true
   return (
     <div>
       <LandingWrapper>
           <Nav />
           <Landing />
       </LandingWrapper>
-        <Banner change={true}/>
+        <Banner/>
         <Testimonials />
-        <Banner change={false}/>
+        <Banner change={true}/>
         <Testimonials />
         <Footer />
     </div>

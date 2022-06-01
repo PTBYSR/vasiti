@@ -7,7 +7,8 @@ export const BannerSection = styled.section`
     position: relative;
     overflow: hidden;
     gap: 0rem;
-    color: ${props => props.change ? props.change : "white"};
+    flex-direction: ${props => props.change ? "row-reverse" : "row"};
+    background-color: ${props => props.change ? "var(--bg-light-pink)" : "var(--bg-gray)"};
 `
 export const Ellipse = styled.img`
     border: 2px dashed blue;
@@ -33,33 +34,36 @@ export const HeadingSection = styled.div`
     justify-content: space-around;
     padding: 5vw 0vw 5vw 6.5vw;
     gap: 0rem;
+    color: ${props => props.change ? "var(--fc-top-nav)" : "var(--bg-white)"};
+    padding: ${props => props.change ? "5vw 6.5vw 5vw 0vw" : "5vw 0vw 5vw 6.5vw"};
 `
 export const HeadingWrapper = styled.div`
     border: 1px solid green;
 `
 export const Share = styled.div`
-    border: 1px solid green;
     position:relative;
-`
+    `
 export const Slash = styled.img`
-    width: 14vw;
+    width: 18vw;
     position: absolute;
     left: -9px;
     bottom: -6px;
-`
+    `
 export const TextBody = styled.div`
     border: 1px solid green;
     height: 10vw
-`
+    `
 export const ShareBtn = styled.div`
-    font-size: .97vw;
+    font-size: 1.2vw;
     letter-spacing: 0.2em;
     cursor: pointer;
-`
+    color: ${props => props.change ? "var(--orange)" : ""}
+    `
 export const Customer = styled.p`
     display: inline-block;
     padding: 5px 6px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 4px;
     margin-top: 5px;
-`
+    color: ${props => props.change ? "var(--orange)" : "var(--fc-white)"};
+    `
