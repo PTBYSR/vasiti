@@ -7,6 +7,7 @@ export const BannerSection = styled.section`
     position: relative;
     overflow: hidden;
     gap: 0rem;
+    color: ${props => props.change ? props.change : "white"};
 `
 export const Ellipse = styled.img`
     border: 2px dashed blue;

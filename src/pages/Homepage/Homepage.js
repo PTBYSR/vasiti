@@ -16,9 +16,9 @@ const Homepage = () => {
           <Nav />
           <Landing />
       </LandingWrapper>
-        <Banner />
+        <Banner change={true}/>
         <Testimonials />
-        {/* <Banner /> */}
+        <Banner change={false}/>
         <Testimonials />
         <Footer />
     </div>

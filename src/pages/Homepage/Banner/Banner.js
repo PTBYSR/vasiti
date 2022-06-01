@@ -17,9 +17,9 @@ import blackGirls from './black-girls.png'
 import slash from './slash.svg'
 
 
-const Banner = () => {
+const Banner = ({change}) => {
   return (
-    <BannerSection className='bg-gray flex'>
+    <BannerSection className='flex'>
     <ImageSection>
       <Ellipse src={ellipse}></Ellipse>
       <Girls src={blackGirls}></Girls>
