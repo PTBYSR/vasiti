@@ -14,13 +14,16 @@ export const Ellipse = styled.img`
     border: 2px dashed blue;
     position: absolute;
     /* left: 109px; */
-    bottom: -30px;
+    /* bottom: -30px; */
+    bottom: ${props => props.change ? "-60px" : "-30px"};
     width: 41vw;
+    right : ${props => props.change ? "150px" : ""};
 `
 export const Girls = styled.img`
     border: 2px dashed blue;
     position: absolute;
-    width: 40vw;
+    /* width: 40vw; */
+    width: ${props => props.change ? "40vw" : "40vw"};
     bottom: 0;
 `
 export const ImageSection = styled.div`
@@ -31,9 +34,9 @@ export const HeadingSection = styled.div`
     border: 1px solid green;
     width: 50%;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     padding: 5vw 0vw 5vw 6.5vw;
-    gap: 0rem;
+    gap: 2rem;
     color: ${props => props.change ? "var(--fc-top-nav)" : "var(--bg-white)"};
     padding: ${props => props.change ? "5vw 6.5vw 5vw 0vw" : "5vw 0vw 5vw 6.5vw"};
 `
@@ -42,6 +45,7 @@ export const HeadingWrapper = styled.div`
 `
 export const Share = styled.div`
     position:relative;
+    margin-top: 1.5vw;
     `
 export const Slash = styled.img`
     width: 18vw;
@@ -51,7 +55,7 @@ export const Slash = styled.img`
     `
 export const TextBody = styled.div`
     border: 1px solid green;
-    height: 10vw
+    /* height: 10vw */
     `
 export const ShareBtn = styled.div`
     font-size: 1.2vw;
@@ -61,8 +65,9 @@ export const ShareBtn = styled.div`
     `
 export const Customer = styled.p`
     display: inline-block;
-    padding: 5px 6px;
+    padding: .5vw .5vw;
     border: 1px solid rgba(255, 255, 255, 0.4);
+    border: ${props => props.change ? "1px solid var(--orange)" : "1px solid rgba(255, 255, 255, 0.4)"};
     border-radius: 4px;
     margin-top: 5px;
     color: ${props => props.change ? "var(--orange)" : "var(--fc-white)"};
