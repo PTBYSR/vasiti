@@ -16,6 +16,7 @@ export const BottomFooter = styled.div`
     height: 55%;
     flex-direction: row;
     justify-content: space-between;
+    gap:-rem;
 `
 export const HeadingSection = styled.div`
     border: 2px solid black;
