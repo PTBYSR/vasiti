@@ -22,7 +22,7 @@ export const HeadingSection = styled.div`
     border: 2px solid black;
 `
 export const Sub = styled.img`
-    width: 23vw;
+    width: 26vw;
     position: absolute;
     bottom: 0;
     left: 50px;
